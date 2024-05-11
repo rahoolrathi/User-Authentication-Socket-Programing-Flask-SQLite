@@ -1,8 +1,9 @@
 # app.py
 from flask import Flask
-from routes import setup_routes
 from models import db
+from routes import setup_routes
 from database_operations import add_users
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 
@@ -14,8 +15,8 @@ with app.app_context():
     db.create_all()
 
 # Call function to add users
-add_users()
-# Register routes
+add_users(app)
+
 setup_routes(app)
 
 if __name__ == '__main__':

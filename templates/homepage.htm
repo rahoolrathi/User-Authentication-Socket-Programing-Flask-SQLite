@@ -2,10 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: slide-in 0.5s ease-out;
+      }
+      table {
+        margin: auto;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 400px;
+      }
+      th,
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .message {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      @keyframes slide-in {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Authincate</h1>
+    <div class="container">
+      <div class="message">Work in Progress. Website Launching Soon!</div>
+      <h1 style="color: #007bff">Developers</h1>
+      <table>
+        <tr>
+          <th>Roll Number</th>
+          <th>Name</th>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>John Doe</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Jane Doe</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Michael Smith</td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>Emily Johnson</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
