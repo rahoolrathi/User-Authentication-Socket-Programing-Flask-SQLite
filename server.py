@@ -3,7 +3,7 @@ import socket
 import threading
 
 def authenticate_user(username, password):
-    # Dummy authentication function, replace with actual authentication logic
+    
     return username == "admin" and password == "password"
 
 def handle_client_connection(client_socket):
